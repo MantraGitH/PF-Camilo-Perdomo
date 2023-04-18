@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+section article {
+  background-image: url(../img/ofertasynuevosdos.jpg);
+  background-size: cover;
+  height: 365px;
+  width: 600px;
+  margin-bottom: 1em;
+  display: flex;
+}
+
+
+.logo-img {
+  background-image: url(../img/axiouscdos.jpg);
+  background-color: rgb(31, 31, 31);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  display: flex;
+}
+
+
+
+h1 {
+  display: none;
+}
+
+.flex-contenedor {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nuevos-ofertas {
+  color: whitesmoke;
+  background-color: rgb(31, 31, 31);
+  width: 500px;
+
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 5px;
+  padding: 10px 0;
+}
+
+.mas-vendidos {
+  color: whitesmoke;
+  background-color: rgb(31, 31, 31);
+
+  width: 500px;
+  text-align: center;
+  margin-bottom: 1em;
+  padding: 10px 0;
+}
+
+.articulos-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.boton-busqueda {
+  display: inline-block;
+  margin-top: 2em;
+}
+
+.flex-nav {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+}
+
+.flex-nav nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 4em;
+}
+
+.flex-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.nav {
+  color: whitesmoke;
+  background-color: rgb(31, 31, 31);
+  width: 100%;
+  padding: 20px 15px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.card {
+  display: flex;
+  width: 500px;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+}
+
+.parrafo{
+  display: flex;
+  padding-inline: 1em;
+}
+
+.nosotros-preguntas {
+  margin-left: 1em;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  display: flex;
+}
+
+.boton-busqueda{
+  background-color: rgb(31, 31, 31);
+  color: whitesmoke;
+  border-radius: 50px;
+  padding-inline: 10px;
+  border-style: none;
+}
+
+.boton {
+  background-color: rgb(31, 31, 31);
+  color: whitesmoke;
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.boton-carrito {
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+.carrito-label {
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+.tabla-carrito {
+  margin-top: 1em;
+  margin-left: 1em;
+color: rgb(31, 31, 31);
+border: solid rgb(31, 31, 31);
+}
+
+.divcarrito-imagen {
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 1em;
+}
+
+.faq-nosotros {
+  margin-top: 1em;
+}
+
+
+.foot-flex {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2em;
+  width: 100%;
+  background-color: rgb(31, 31, 31);
+  flex-wrap: wrap;
+}
+
+.footer {
+  display: flex;
+  color: whitesmoke;
+  background-color: rgb(31, 31, 31);
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer li {
+  padding: 30px;
+  display: flex;
+}
+
+.nav li,
+.nav ul,
+.footer li {
+  list-style: none;
+}
+
+.nav li a,
+a:visited,
+.footer li a,
+a:visited {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.nav li a:hover,
+.footer li a:hover {
+  text-decoration: underline;
+  color: chocolate;
+}
+
+.pagos {
+  color: whitesmoke;
+  font-size: 25px;
+  background-color: rgb(31, 31, 31);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagos-img {
+  width: 600px;
+}
+
+
+@media screen and (max-width: 480px) {
+
+
+  section article {
+    background-image: url(../img/ofertasynuevosdos.jpg);
+    background-size: cover;
+    width: 100%;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .logo-img {
+    background-image: url(../img/axiouscdos.jpg);
+    background-color: rgb(31, 31, 31);
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    display: flex;
+  }
+  
+  .section-busqueda {
+    font-weight: 700;
+    margin-top: 1em;
+  }
+
+  .nuevosimg {
+    display: flex;
+    width: 100%;
+  }
+  .articulos-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .flex-contenedor {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h3 {
+    text-align: center;
+    align-items: center;
+  }
+
+  .nuevos-ofertas {
+    color: whitesmoke;
+    background-color: rgb(31, 31, 31);
+    width: 100vw;
+  
+    justify-content: center;
+    text-align: center;
+    align-items:center;
+    margin-top: 1em;
+    margin-bottom: 5px;
+    display: flex;
+    padding: 10px 0;
+  }
+
+  .mas-vendidos{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    padding: 10px 0;
+    margin-bottom: 1em;
+  }
+
+  
+  .flex-nav {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+  }
+  
+  .flex-nav nav ul {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .flex-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+  
+  .nav {
+    color: whitesmoke;
+    background-color: rgb(31, 31, 31);
+    width: 100vw;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 5px;
+    display: flex;
+  }
+  
+  .card {
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    margin-bottom: 1em;
+  }
+
+  .parrafo{
+    display: flex;
+    padding-inline: 1em;
+  }
+
+
+  
+  .footer {
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    background-color: rgb(31, 31, 31);
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .foot-flex{
+    flex-direction: column;
+    margin-top: 2em;
+  }
+
+  .imagen-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  
+  .footer li {
+    display: flex;
+  }
+  
+  .nav li,
+  .nav ul,
+  .footer li {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav li a,
+  a:visited,
+  .footer li a,
+  a:visited {
+    text-decoration: none;
+    color: whitesmoke;
+    display: flex;
+  }
+  
+  .nav li a:hover,
+  .footer li a:hover {
+    text-decoration: underline;
+    color: chocolate;
+    display: flex;
+  }
+
+  .pagos {
+    color: whitesmoke;
+    font-size: 25px;
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .pagos-img {
+    width: 95%;
+    display: flex;
+    margin-bottom: 1em;
+  }
+
+
+}
