@@ -4,83 +4,113 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Carrito de compras de Axio, ropa urbana casual. Envios a todo el pais."
+    />
     <link rel="stylesheet" type="text/css" href="../css/styles.css" />
-    <title>Carrito - Axio Urban Style</title>
+    <title>Axio Urban Style | Estilo Ropa Urbana - Carrito</title>
   </head>
   <body>
     <header>
-      <div class="flex-div">
-        <h1>Axio Urban Style</h1>
-        <div class="logo-img"></div>
+      <section>
+        <div class="flex-div">
+          <h1>Axio Urban Style</h1>
+          <div class="logo-img">
+            <img src="../img/axiouscdos.jpg" alt="logo tienda de ropa urbana" />
+          </div>
 
-        <div class="flex-nav">
-          <nav class="nav">
-            <ul>
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="./catalogo.html">Catálogo</a></li>
-              <li><a href="./carrito.html">Carrito</a></li>
-              <li><a href="./nosotros.html">Nosotros</a></li>
-              <li><a href="./contacto.html">Contáctanos</a></li>
-            </ul>
-          </nav>
+          <div class="flex-nav">
+            <nav class="nav">
+              <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./catalogo.html">Catálogo</a></li>
+                <li><a href="./carrito.html">Carrito</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./contacto.html">Contáctanos</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-      </div>
+      </section>
     </header>
 
-    <h2 class="carrito-label">Carrito:</h2>
+    <h2 class="carrito-label">Carrito de compras</h2>
 
-
-
-    <table class="tabla-carrito">
-      <thead>
-        <tr class="encabezado">
-          <th class="producto-carrito">Producto</th>
-          <th class="precio-carrito">Precio</th>
-          <th class="cantidad-carrito">Cantidad</th>
-          <th class="subtotal-carrito">Subtotal</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <div class="divcarrito-imagen">
-            <img src="../img/card.jpg" alt="imagen" class="imagen-carrito" />
-            <img src="../img/card.jpg" alt="imagen" class="imagen-carrito" />
-            <img src="../img/card.jpg" alt="imagen" class="imagen-carrito" />
+    <main>
+      <section>
+        <div class="carrito-general">
+          <div>
+            <img
+              src="../img/remeraarticmonkeysunisex.jpg"
+              alt="remera artic monkeys unisex"
+              class="tamaño-imagen-carrito"
+            />
+            <img
+              src="../img/buzoconverseunisex.jpg"
+              alt="buzo converse unisex"
+              class="tamaño-imagen-carrito"
+            />
           </div>
-          <td class="producto-carrito">
-            Pantalón Umbro Deportivo Unisex Talle M
-          </td>
-          <td class="precio-carrito">$500.00</td>
-          <td class="cantidad-carrito">2</td>
-          <td class="subtotal-carrito">$1,000.00</td>
-        </tr>
-        <tr>
-          <td class="producto-carrito">Remera Artic Monkeys Unisex Talle L</td>
-          <td class="precio-carrito">$200.00</td>
-          <td class="cantidad-carrito">3</td>
-          <td class="subtotal-carrito">$600.00</td>
-        </tr>
-        <tr>
-          <td class="producto-carrito">
-            Zapatillas deportivas Calza 40 Hombre
-          </td>
-          <td class="precio-carrito">$1,200.00</td>
-          <td class="cantidad-carrito">1</td>
-          <td class="subtotal-carrito">$1,200.00</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td colspan="3">Total:</td>
-          <td>$2,800.00</td>
-        </tr>
-      </tfoot>
-    </table>
+          <div>
+            <table class="tabla-carrito">
+              <thead>
+                <tr class="titulo-tabla-carrito">
+                  <th>Producto</th>
+                  <th>Precio</th>
+                  <th>Cantidad</th>
+                  <th>Total</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody class="carrito-añadidos">
+                <tr>
+                  <td>Remera Artic Monkeys</td>
+                  <td>$1200</td>
+                  <td>
+                    <button disabled>-</button>
+                    <input type="text" value="1" />
+                    <button>+</button>
+                  </td>
+                  <td>$1200</td>
+                  <td>
+                    <button class="boton"><span>Eliminar</span></button>
+                  </td>
+                </tr>
 
-    <button class="boton boton-carrito">Proceder a pagar</button>
-    <button class="boton boton-carrito">
-      <a href="../pages/catalogo.html">Volver a la tienda</a>
-    </button>
+                <tr>
+                  <td>Buzo Converse</td>
+                  <td>$2600</td>
+                  <td>
+                    <button disabled>-</button>
+                    <input type="text" value="1" />
+                    <button>+</button>
+                  </td>
+                  <td>$2600</td>
+                  <td>
+                    <button class="boton"><span>Eliminar</span></button>
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot class="precio-total-tabla">
+                <tr>
+                  <td colspan="3">Total:</td>
+                  <td>$3800</td>
+                  <td></td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+
+        <button class="boton boton-carrito">
+          <span>Proceder a pagar</span>
+        </button>
+        <button class="boton boton-carrito">
+          <a href="../pages/catalogo.html"><span>Volver a la Tienda</span></a>
+        </button>
+      </section>
+    </main>
 
     <footer class="foot-flex">
       <nav class="footer">

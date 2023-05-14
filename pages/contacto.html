@@ -4,59 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Seccion de contactos de Axio, la tienda de ropa con el mejor estilo urbano de Uruguay. Respuesta Rápida e inmediata."
+    />
     <link rel="stylesheet" type="text/css" href="../css/styles.css" />
-    <title>Contáctanos - Axio Urban Style</title>
+    <title>Axio Urban Style | Estilo Ropa Urbana - Contacto</title>
   </head>
   <body>
     <header>
-      <div class="flex-div">
-        <h1>Axio Urban Style</h1>
-        <div class="logo-img"></div>
+      <section>
+        <div class="flex-div">
+          <h1>Axio Urban Style</h1>
+          <div class="logo-img">
+            <img src="../img/axiouscdos.jpg" alt="logo tienda de ropa urbana" />
+          </div>
 
-        <div class="flex-nav">
-          <nav class="nav">
-            <ul>
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="./catalogo.html">Catálogo</a></li>
-              <li><a href="./carrito.html">Carrito</a></li>
-              <li><a href="./nosotros.html">Nosotros</a></li>
-              <li><a href="./contacto.html">Contáctanos</a></li>
-            </ul>
-          </nav>
+          <div class="flex-nav">
+            <nav class="nav">
+              <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./catalogo.html">Catálogo</a></li>
+                <li><a href="./carrito.html">Carrito</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./contacto.html">Contáctanos</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-      </div>
+      </section>
     </header>
 
     <main>
-      <h2>Contáctanos</h2>
-
-      <section>
-        <form action="">
-          <div>
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" />
-          </div>
-
-          <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" />
-          </div>
-
-          <div>
-            <label for="mensaje">Mensaje</label>
-            <textarea
-              name="mensaje"
-              id="mensaje"
-              cols="30"
-              rows="10"
-            ></textarea>
-          </div>
-
-          <div>
-            <input type="submit" value="enviar" />
-          </div>
+      <section class="contactos">
+        <h2 class="contactos-titulo">Contactos</h2>
+        <form>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje"></textarea>
         </form>
       </section>
+      <button type="submit" class="boton boton-enviar">
+        <span>Enviar</span>
+      </button>
     </main>
 
     <footer class="foot-flex">
